@@ -1,0 +1,14 @@
+# conjur-role.yml
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: cybr
+  labels:
+    name: cybr
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: conjur-cluster
+  namespace: cybr
